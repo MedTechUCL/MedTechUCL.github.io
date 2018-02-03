@@ -1,0 +1,6 @@
+---
+layout: post
+title:  "Dummy"
+categories: jekyll update
+---
+You’ll find this post in your `_posts` directory. 
