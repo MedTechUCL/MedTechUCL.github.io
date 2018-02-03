@@ -16,8 +16,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-413">
-              <caret line="43" column="24" lean-forward="false" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+            <state relative-caret-position="665">
+              <caret line="89" column="48" lean-forward="false" selection-start-line="89" selection-start-column="48" selection-end-line="89" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -36,8 +36,8 @@
       <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="105" column="104" lean-forward="false" selection-start-line="105" selection-start-column="104" selection-end-line="105" selection-end-column="104" />
+            <state relative-caret-position="132">
+              <caret line="97" column="96" lean-forward="false" selection-start-line="97" selection-start-column="96" selection-end-line="97" selection-end-column="96" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -67,9 +67,10 @@
       <find>001</find>
       <find>rida</find>
       <find>talks</find>
-      <find>footer</find>
       <find>hali</find>
       <find>math</find>
+      <find>footer</find>
+      <find>halimat</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -84,8 +85,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="508" />
-    <option name="y" value="386" />
+    <option name="x" value="494" />
+    <option name="y" value="42" />
     <option name="width" value="1045" />
     <option name="height" value="787" />
   </component>
@@ -110,6 +111,17 @@
             <path>
               <item name="MedTechUCL.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="MedTechUCL.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MedTechUCL.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MedTechUCL.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MedTechUCL.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MedTechUCL.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="members_photos" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -151,7 +163,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="508" y="386" width="1045" height="787" extended-state="0" />
+    <frame x="494" y="42" width="1045" height="787" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24925224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -182,6 +194,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/img/members_photos/halimat_A_cropped.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="577">
@@ -190,23 +207,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/members_photos/halimat_A_cropped.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-413">
-          <caret line="43" column="24" lean-forward="false" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+        <state relative-caret-position="665">
+          <caret line="89" column="48" lean-forward="false" selection-start-line="89" selection-start-column="48" selection-end-line="89" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="105" column="104" lean-forward="false" selection-start-line="105" selection-start-column="104" selection-end-line="105" selection-end-column="104" />
+        <state relative-caret-position="132">
+          <caret line="97" column="96" lean-forward="false" selection-start-line="97" selection-start-column="96" selection-end-line="97" selection-end-column="96" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
