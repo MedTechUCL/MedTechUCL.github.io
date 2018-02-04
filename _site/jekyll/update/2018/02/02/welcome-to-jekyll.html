@@ -2,10 +2,10 @@
 <html lang="en">
 
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Begin Jekyll SEO tag v2.4.0 -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.4.0 -->
 <title>Welcome to Jekyll! | Your awesome title</title>
 <meta name="generator" content="Jekyll v3.7.2" />
 <meta property="og:title" content="Welcome to Jekyll!" />
@@ -21,496 +21,53 @@
 {"description":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.","@type":"BlogPosting","url":"http://localhost:4000/jekyll/update/2018/02/02/welcome-to-jekyll.html","headline":"Welcome to Jekyll!","dateModified":"2018-02-02T23:11:10+00:00","datePublished":"2018-02-02T23:11:10+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2018/02/02/welcome-to-jekyll.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <!--<link rel="stylesheet" href="/assets/main.css">-->
-    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" />
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-        body {
-            font-family: 'Ubuntu', sans-serif;
-            color: #333;
-            overflow-x: hidden;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        .fix-underline-a {
-            height: 50px;
-        }
-
-        .v-header {
-            height: 90vh;
-            display: flex;
-            align-items: center;
-            color: #fff;
-        }
-
-        .container {
-            max-width: 960px;
-            padding-left: 1rem;
-            padding-right: 1rem;
-            margin: auto;
-            text-align: center;
-        }
-
-        .fullscreen-video-wrap {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        .fullscreen-video-wrap video {
-            max-height: 105%;
-            min-width: 100%;
-            height: auto;
-            width: auto;
-            min-height: 100%;
-        }
-
-        .header-overlay {
-            height: 100vh;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            z-index: 1;
-            background: #225470;
-            opacity: 0.85;
-        }
-
-        .header-content {
-            z-index: 2;
-        }
-
-        .header-content h1 {
-            font-size: 50px;
-            margin-bottom: 0;
-        }
-
-        .header-content p {
-            font-size: 1.5rem;
-            display: block;
-            padding-bottom: 2rem;
-        }
-
-        .btn {
-            background: #34b3a0;
-            color: #fff;
-            font-size: 1.2rem;
-            padding: 1rem 2rem;
-            text-decoration: none;
-        }
-
-
-        @media(max-width:960px) {
-            .container {
-                padding-right: 3rem;
-                padding-left: 3rem;
-            }
-        }
-
-        .col-12-12 {
-            width: 300px;
-            height: 200px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .col-1-4 {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .member-image {
-            max-width: 150px;
-            max-height: 150px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            float: none !important;
-            border-radius: 50%;
-        }
-
-        .navbar {
-            margin-bottom: 20px;
-            border: 0;
-            -webkit-box-shadow: none;
-            box-shadow: none;
-            border-radius: 0;
-            background-color: #292c2f;
-            color: #FFF;
-            padding: 1% 0;
-            font-size: 1.2em;
-            z-index: 2;
-        }
-
-        .navbar-brand {
-            float: left;
-            min-height: 80px;
-            padding: 0 15px 5px;
-        }
-
-        .navbar-inverse .navbar-nav .active a,
-        .navbar-inverse .navbar-nav .active a:focus,
-        .navbar-inverse .navbar-nav .active a:hover {
-            position: relative;
-            width: 100%;
-            left: 0;
-            color: #FFF;
-            background-color: transparent;
-            border: 0;
-            border-color: transparent;
-            bottom: -1px;
-            /*Change this to increase/decrease distance*/
-            border-bottom: 3px solid #FFFFFF;
-        }
-
-        .navbar-inverse .navbar-nav li a {
-            color: #D5D5D5;
-            border: 0;
-            border-color: transparent;
-        }
-
-        .underlined {
-            position: relative;
-        }
-
-        .underlined:hover::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 0;
-            left: 0;
-            bottom: -1px;
-            /*Change this to increase/decrease distance*/
-            border-bottom: 3px solid #FFFFFF;
-        }
-
-        .carousel-caption {
-            top: 50%;
-            transform: translateY(-50%);
-            text-transform: uppercase;
-        }
-
-        .btn {
-            font-size: 18px;
-            color: #FFF;
-            padding: 12px 22px;
-            background-color: #3F8FB0;
-        }
-
-        .icon {
-            max-width: 200px;
-            margin: 1% auto;
-        }
-
-        @media (max-width: 600px) {
-            .carousel-caption {
-                display: none;
-            }
-
-            #icon {
-                max-width: 150px;
-            }
-
-            h2 {
-                font-size: 1.7em;
-            }
-        }
-
-        /* entire container, keeps perspective */
-
-        .flip-container {
-            perspective: 1000px;
-        }
-
-
-
-        /* flip the pane when hovered */
-
-        .flip-container:hover .flipper,
-        .flip-container.hover .flipper {
-            transform: rotateY(180deg);
-        }
-
-        .flip-container,
-        .front,
-        .back {
-            width: auto;
-            height: 200px;
-        }
-
-
-
-
-        /* flip speed goes here */
-
-        .flipper {
-            transition: 0.7s;
-            transform-style: preserve-3d;
-
-            position: relative;
-        }
-
-
-
-
-        /* hide back of pane during swap */
-
-        .front,
-        .back {
-            backface-visibility: hidden;
-
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-
-
-        /* front pane, placed above back */
-
-        .front {
-            z-index: 2;
-            /* for firefox 31 */
-            transform: rotateY(0deg);
-        }
-
-
-
-        /* back, initially hidden pane */
-
-        .back {
-            transform: rotateY(180deg);
-        }
-
-        .padding {
-            padding-top: 60px;
-        }
-
-        .footer-distributed {
-            background-color: #292c2f;
-            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-            box-sizing: border-box;
-            width: 100%;
-            text-align: left;
-            font: normal 16px sans-serif;
-
-            padding: 45px 50px;
-            margin-top: 80px;
-        }
-
-        .footer-distributed .footer-left p {
-            color: #ffffff;
-            font-size: 14px;
-            margin: 0;
-        }
-        .footer-distributed .footer-left img {
-            height: 35px;
-        }
-
-        .footer-distributed .footer-right ul {
-            /*margin:0;*/
-            padding:0;
-            /*display:none;*/
-        }
-
-        /*#nav:hover > .footer-distributed .footer-right ul {*/
-        /*display:block;*/
-        /*}*/
-
-
-        /* Footer links */
-
-        .footer-distributed p.footer-links {
-            font-size: 18px;
-            font-weight: bold;
-            color: #ffffff;
-            margin: 0 0 10px;
-            padding: 0;
-        }
-
-        .footer-distributed p.footer-links a {
-            display: inline-block;
-            line-height: 1.8;
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .footer-distributed .footer-right {
-            float: right;
-            margin-top: 6px;
-            /*max-width: 180px;*/
-        }
-
-        .flag {
-            margin-right: 3.3px;
-            display: inline-block;
-            width: 30px;
-            height: 35px;
-            background-color: #33383b;
-            border-radius: 2px;
-
-            font-size: 20px;
-            color: #ffffff;
-            text-align: center;
-            line-height: 35px;
-
-            margin-left: 3px;
-            list-style-type: none;
-        }
-
-        .footer-distributed .footer-right a {
-            display: inline-block;
-            width: 30px;
-            height: 35px;
-            background-color: #33383b;
-            border-radius: 2px;
-
-            font-size: 20px;
-            color: #ffffff;
-            text-align: center;
-            line-height: 35px;
-
-            margin-left: 3px;
-            list-style-type: none;
-        }
-
-        #id1{
-            /*background:red;*/
-            position:relative;
-            list-style-type: none;
-        }
-
-        .flag > li{
-            list-style-type: none;
-        }
-
-        .drop_down{
-            display:none;
-            position:absolute;
-            bottom:35px;
-            left:-70px;
-            list-style-type: none;
-        }
-
-        .flag li:hover ul{
-            display:block;
-            list-style-type: none;
-        }
-
-
-        #en a, #fr a {
-            width:100px;
-            border-radius: inherit;
-            list-style-type: none;
-        }
-
-        @media (max-width: 600px) {
-
-            .footer-distributed .footer-left,
-            .footer-distributed .footer-right {
-                text-align: center;
-            }
-
-            .footer-distributed .footer-right {
-                float: none;
-                margin: 0 auto 20px;
-            }
-
-            .footer-distributed .footer-left p.footer-links {
-                line-height: 1.8;
-            }
-        }
-
-        footer{
-            position: absolute;
-
-        }
-
-        @media (max-height:800px){
-            footer { position: static; }
-            /*header { padding-top:10px; }*/
-        }
-
-        .post-list {
-            list-style-type: none;
-        }
-
-        .post {
-            padding-bottom: 20px;
-        }
-
-        .h-entry{
-            padding-left: 40px;
-            padding-right: 40px;
-        }
-
-
-    </style>
+  <link rel="stylesheet" href="/assets/main.css">
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" />
+  
 </head>
+
 
   <body>
 
-    <body>
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="#">
-                <img class="navbar-brand" src="http://localhost:4000/img/Medtech-logo-transparentnw.png">
-                <!--<div class="navbar-brand">-->
-                    <!--http://localhost:4000/img/Medtech-logo-transparentnw.png-->
+    <header class="site-header" role="banner">
 
-                    <!--&lt;!&ndash;({})&ndash;&gt;-->
-                <!--</div>-->
-            </a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="underlined">
-                    <a href="http://localhost:4000/" class="fix-underline-a">
-                        <font color="white">HOME</font>
-                    </a>
-                </li>
-                <li class="underlined">
-                    <a href="http://localhost:4000/about.html">
-                        <font color="white">ABOUT</font>
-                    </a>
-                </li>
-                <li class="underlined">
-                    <a href="http://localhost:4000/events.html">
-                        <font color="white">EVENTS</font>
-                    </a>
-                </li>
-                <li class="underlined">
-                    <a href="#">
-                        <font color="white">CONTACT</font>
-                    </a>
-                </li>
-                <li class="underlined active">
-                    <a href="http://localhost:4000/blog.html">
-                        <font color="white">BLOG</font>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+  <div class="wrapper">
+    
+    
+    <a class="site-title" rel="author" href="/">Your awesome title</a>
 
-</nav>
-</body>
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
 
 
     <main class="page-content" aria-label="Content">
@@ -553,33 +110,53 @@
       </div>
     </main>
 
-    <footer class="footer-distributed">
+    <footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
 
-    <div class="footer-right">
+  <div class="wrapper">
 
-        <ul class="flag">
-            <li id="id1">
-                <a><i class="fa fa-facebook"></i></a>
-                <ul class="drop_down">
-                    <li id="en"><a href="https://www.facebook.com/groups/488680191495412/" target="_blank">Group</a></li>
-                    <li id="fr"><a href="https://www.facebook.com/MedTechUCL/" target="_blank">Page</a></li>
-                </ul>
+    <h2 class="footer-heading">Your awesome title</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">
+            
+              Your awesome title
+            
             </li>
+            
+            <li><a class="u-email" href="mailto:your-email@example.com">your-email@example.com</a></li>
+            
         </ul>
-        <a href="https://twitter.com/UCLMedTech" target="_blank"><i class="fa fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/company/18280939/" target="_blank"><i class="fa fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/uclmedtech/" target="_blank"><i class="fa fa-instagram"></i></a>
-        <a href="mailto:uclmedtech@gmail.com"><i class="fa fa-envelope"></i></a>
-        <a href="https://www.youtube.com/channel/UCqymihxWjKjlDxPNS0ZVrQg" target="_blank"><i class="fa fa-youtube"></i></a>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+  
+  
+  
+  <li><a href="https://github.com/jekyll"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jekyll</span></a></li>
+  
+  
+  
+  <li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li>
+  
+  
+  
+</ul>
+
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+      </div>
     </div>
-    <div class="footer-left">
-        <p>
-            <img src=http://localhost:4000/img/Medtech-logo-transparentnw.png>
-            2017 UCL MedTech Society
-        </p>
-    </div>
+
+  </div>
 
 </footer>
+
 
   </body>
 
