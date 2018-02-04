@@ -1,443 +1,455 @@
 <head>
-    <!--<meta charset="utf-8">-->
-    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
-    <!--{% seo %}-->
-    <!--&lt;!&ndash;<link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">&ndash;&gt;-->
-    <!--{% feed_meta %}-->
-    <!--{% if jekyll.environment == 'production' and site.google_analytics %}-->
-    <!--{% include google-analytics.html %}-->
-    <!--{% endif %}-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!--<style>-->
-        <!--body {-->
-            <!--font-family: 'Ubuntu', sans-serif;-->
-            <!--color: #333;-->
-            <!--overflow-x: hidden;-->
-        <!--}-->
-
-        <!--* {-->
-            <!--box-sizing: border-box;-->
-        <!--}-->
-
-        <!--.fix-underline-a {-->
-            <!--height: 50px;-->
-        <!--}-->
-
-        <!--.v-header {-->
-            <!--height: 90vh;-->
-            <!--display: flex;-->
-            <!--align-items: center;-->
-            <!--color: #fff;-->
-        <!--}-->
-
-        <!--.container {-->
-            <!--max-width: 960px;-->
-            <!--padding-left: 1rem;-->
-            <!--padding-right: 1rem;-->
-            <!--margin: auto;-->
-            <!--text-align: center;-->
-        <!--}-->
-
-        <!--.fullscreen-video-wrap {-->
-            <!--position: absolute;-->
-            <!--top: 0;-->
-            <!--left: 0;-->
-            <!--width: 100%;-->
-            <!--height: 100vh;-->
-            <!--overflow: hidden;-->
-        <!--}-->
-
-        <!--.fullscreen-video-wrap video {-->
-            <!--max-height: 105%;-->
-            <!--min-width: 100%;-->
-            <!--height: auto;-->
-            <!--width: auto;-->
-            <!--min-height: 100%;-->
-        <!--}-->
-
-        <!--.header-overlay {-->
-            <!--height: 100vh;-->
-            <!--position: absolute;-->
-            <!--top: 0;-->
-            <!--left: 0;-->
-            <!--width: 100vw;-->
-            <!--z-index: 1;-->
-            <!--background: #225470;-->
-            <!--opacity: 0.85;-->
-        <!--}-->
-
-        <!--.header-content {-->
-            <!--z-index: 2;-->
-        <!--}-->
-
-        <!--.header-content h1 {-->
-            <!--font-size: 50px;-->
-            <!--margin-bottom: 0;-->
-        <!--}-->
-
-        <!--.header-content p {-->
-            <!--font-size: 1.5rem;-->
-            <!--display: block;-->
-            <!--padding-bottom: 2rem;-->
-        <!--}-->
-
-        <!--.btn {-->
-            <!--background: #34b3a0;-->
-            <!--color: #fff;-->
-            <!--font-size: 1.2rem;-->
-            <!--padding: 1rem 2rem;-->
-            <!--text-decoration: none;-->
-        <!--}-->
-
-
-        <!--@media(max-width:960px) {-->
-            <!--.container {-->
-                <!--padding-right: 3rem;-->
-                <!--padding-left: 3rem;-->
-            <!--}-->
-        <!--}-->
-
-        <!--.col-12-12 {-->
-            <!--width: 300px;-->
-            <!--height: 200px;-->
-            <!--margin-left: auto;-->
-            <!--margin-right: auto;-->
-        <!--}-->
-
-        <!--.col-1-4 {-->
-            <!--margin-left: auto;-->
-            <!--margin-right: auto;-->
-        <!--}-->
-
-        <!--.member-image {-->
-            <!--max-width: 150px;-->
-            <!--max-height: 150px;-->
-            <!--display: block;-->
-            <!--margin-left: auto;-->
-            <!--margin-right: auto;-->
-            <!--float: none !important;-->
-            <!--border-radius: 50%;-->
-        <!--}-->
-
-        <!--.navbar {-->
-            <!--margin-bottom: 20px;-->
-            <!--border: 0;-->
-            <!-- -webkit-box-shadow: none;-->
-            <!--box-shadow: none;-->
-            <!--border-radius: 0;-->
-            <!--background-color: #292c2f;-->
-            <!--color: #FFF;-->
-            <!--padding: 1% 0;-->
-            <!--font-size: 1.2em;-->
-            <!--z-index: 2;-->
-        <!--}-->
-
-        <!--.navbar-brand {-->
-            <!--float: left;-->
-            <!--min-height: 80px;-->
-            <!--padding: 0 15px 5px;-->
-        <!--}-->
-
-        <!--.navbar-inverse .navbar-nav .active a,-->
-        <!--.navbar-inverse .navbar-nav .active a:focus,-->
-        <!--.navbar-inverse .navbar-nav .active a:hover {-->
-            <!--position: relative;-->
-            <!--width: 100%;-->
-            <!--left: 0;-->
-            <!--color: #FFF;-->
-            <!--background-color: transparent;-->
-            <!--border: 0;-->
-            <!--border-color: transparent;-->
-            <!--bottom: -1px;-->
-            <!--/*Change this to increase/decrease distance*/-->
-            <!--border-bottom: 3px solid #FFFFFF;-->
-        <!--}-->
-
-        <!--.navbar-inverse .navbar-nav li a {-->
-            <!--color: #D5D5D5;-->
-            <!--border: 0;-->
-            <!--border-color: transparent;-->
-        <!--}-->
-
-        <!--.underlined {-->
-            <!--position: relative;-->
-        <!--}-->
-
-        <!--.underlined:hover::after {-->
-            <!--content: '';-->
-            <!--position: absolute;-->
-            <!--width: 100%;-->
-            <!--height: 0;-->
-            <!--left: 0;-->
-            <!--bottom: -1px;-->
-            <!--/*Change this to increase/decrease distance*/-->
-            <!--border-bottom: 3px solid #FFFFFF;-->
-        <!--}-->
-
-        <!--.carousel-caption {-->
-            <!--top: 50%;-->
-            <!--transform: translateY(-50%);-->
-            <!--text-transform: uppercase;-->
-        <!--}-->
-
-        <!--.btn {-->
-            <!--font-size: 18px;-->
-            <!--color: #FFF;-->
-            <!--padding: 12px 22px;-->
-            <!--background-color: #3F8FB0;-->
-        <!--}-->
-
-        <!--.icon {-->
-            <!--max-width: 200px;-->
-            <!--margin: 1% auto;-->
-        <!--}-->
-
-        <!--@media (max-width: 600px) {-->
-            <!--.carousel-caption {-->
-                <!--display: none;-->
-            <!--}-->
-
-            <!--#icon {-->
-                <!--max-width: 150px;-->
-            <!--}-->
-
-            <!--h2 {-->
-                <!--font-size: 1.7em;-->
-            <!--}-->
-        <!--}-->
-
-        <!--/* entire container, keeps perspective */-->
-
-        <!--.flip-container {-->
-            <!--perspective: 1000px;-->
-        <!--}-->
-
-
-
-        <!--/* flip the pane when hovered */-->
-
-        <!--.flip-container:hover .flipper,-->
-        <!--.flip-container.hover .flipper {-->
-            <!--transform: rotateY(180deg);-->
-        <!--}-->
-
-        <!--.flip-container,-->
-        <!--.front,-->
-        <!--.back {-->
-            <!--width: auto;-->
-            <!--height: 200px;-->
-        <!--}-->
-
-
-
-
-        <!--/* flip speed goes here */-->
-
-        <!--.flipper {-->
-            <!--transition: 0.7s;-->
-            <!--transform-style: preserve-3d;-->
-
-            <!--position: relative;-->
-        <!--}-->
-
-
-
-
-        <!--/* hide back of pane during swap */-->
-
-        <!--.front,-->
-        <!--.back {-->
-            <!--backface-visibility: hidden;-->
-
-            <!--position: absolute;-->
-            <!--top: 0;-->
-            <!--left: 0;-->
-        <!--}-->
-
-
-
-        <!--/* front pane, placed above back */-->
-
-        <!--.front {-->
-            <!--z-index: 2;-->
-            <!--/* for firefox 31 */-->
-            <!--transform: rotateY(0deg);-->
-        <!--}-->
-
-
-
-        <!--/* back, initially hidden pane */-->
-
-        <!--.back {-->
-            <!--transform: rotateY(180deg);-->
-        <!--}-->
-
-        <!--.padding {-->
-            <!--padding-top: 60px;-->
-        <!--}-->
-
-        <!--.footer-distributed {-->
-            <!--background-color: #292c2f;-->
-            <!--box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);-->
-            <!--box-sizing: border-box;-->
-            <!--width: 100%;-->
-            <!--text-align: left;-->
-            <!--font: normal 16px sans-serif;-->
-
-            <!--padding: 45px 50px;-->
-            <!--margin-top: 80px;-->
-        <!--}-->
-
-        <!--.footer-distributed .footer-left p {-->
-            <!--color: #ffffff;-->
-            <!--font-size: 14px;-->
-            <!--margin: 0;-->
-        <!--}-->
-        <!--.footer-distributed .footer-left img {-->
-            <!--height: 35px;-->
-        <!--}-->
-
-        <!--.footer-distributed .footer-right ul {-->
-            <!--/*margin:0;*/-->
-            <!--padding:0;-->
-            <!--/*display:none;*/-->
-        <!--}-->
-
-        <!--/*#nav:hover > .footer-distributed .footer-right ul {*/-->
-        <!--/*display:block;*/-->
-        <!--/*}*/-->
-
-
-        <!--/* Footer links */-->
-
-        <!--.footer-distributed p.footer-links {-->
-            <!--font-size: 18px;-->
-            <!--font-weight: bold;-->
-            <!--color: #ffffff;-->
-            <!--margin: 0 0 10px;-->
-            <!--padding: 0;-->
-        <!--}-->
-
-        <!--.footer-distributed p.footer-links a {-->
-            <!--display: inline-block;-->
-            <!--line-height: 1.8;-->
-            <!--text-decoration: none;-->
-            <!--color: inherit;-->
-        <!--}-->
-
-        <!--.footer-distributed .footer-right {-->
-            <!--float: right;-->
-            <!--margin-top: 6px;-->
-            <!--/*max-width: 180px;*/-->
-        <!--}-->
-
-        <!--.flag {-->
-            <!--margin-right: 3.3px;-->
-            <!--display: inline-block;-->
-            <!--width: 30px;-->
-            <!--height: 35px;-->
-            <!--background-color: #33383b;-->
-            <!--border-radius: 2px;-->
-
-            <!--font-size: 20px;-->
-            <!--color: #ffffff;-->
-            <!--text-align: center;-->
-            <!--line-height: 35px;-->
-
-            <!--margin-left: 3px;-->
-            <!--list-style-type: none;-->
-        <!--}-->
-
-        <!--.footer-distributed .footer-right a {-->
-            <!--display: inline-block;-->
-            <!--width: 30px;-->
-            <!--height: 35px;-->
-            <!--background-color: #33383b;-->
-            <!--border-radius: 2px;-->
-
-            <!--font-size: 20px;-->
-            <!--color: #ffffff;-->
-            <!--text-align: center;-->
-            <!--line-height: 35px;-->
-
-            <!--margin-left: 3px;-->
-            <!--list-style-type: none;-->
-        <!--}-->
-
-        <!--#id1{-->
-            <!--/*background:red;*/-->
-            <!--position:relative;-->
-            <!--list-style-type: none;-->
-        <!--}-->
-
-        <!--.flag > li{-->
-            <!--list-style-type: none;-->
-        <!--}-->
-
-        <!--.drop_down{-->
-            <!--display:none;-->
-            <!--position:absolute;-->
-            <!--bottom:35px;-->
-            <!--left:-70px;-->
-            <!--list-style-type: none;-->
-        <!--}-->
-
-        <!--.flag li:hover ul{-->
-            <!--display:block;-->
-            <!--list-style-type: none;-->
-        <!--}-->
-
-
-        <!--#en a, #fr a {-->
-            <!--width:100px;-->
-            <!--border-radius: inherit;-->
-            <!--list-style-type: none;-->
-        <!--}-->
-
-        <!--@media (max-width: 600px) {-->
-
-            <!--.footer-distributed .footer-left,-->
-            <!--.footer-distributed .footer-right {-->
-                <!--text-align: center;-->
-            <!--}-->
-
-            <!--.footer-distributed .footer-right {-->
-                <!--float: none;-->
-                <!--margin: 0 auto 20px;-->
-            <!--}-->
-
-            <!--.footer-distributed .footer-left p.footer-links {-->
-                <!--line-height: 1.8;-->
-            <!--}-->
-        <!--}-->
-
-        <!--footer{-->
-            <!--position: absolute;-->
-
-        <!--}-->
-
-        <!--@media (max-height:800px){-->
-            <!--footer { position: static; }-->
-            <!--/*header { padding-top:10px; }*/-->
-        <!--}-->
-
-        <!--.post-list {-->
-            <!--list-style-type: none;-->
-        <!--}-->
-
-        <!--.post {-->
-            <!--padding-bottom: 20px;-->
-        <!--}-->
-
-        <!--.h-entry{-->
-            <!--padding-left: 40px;-->
-            <!--padding-right: 40px;-->
-        <!--}-->
-
-
-    <!--</style>-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+    {% feed_meta %}
+    {% if jekyll.environment == 'production' and site.google_analytics %}
+    {% include google-analytics.html %}
+    {% endif %}
 </head>
+
+<!--<head>-->
+    <!--&lt;!&ndash;<meta charset="utf-8">&ndash;&gt;-->
+    <!--&lt;!&ndash;<meta http-equiv="X-UA-Compatible" content="IE=edge">&ndash;&gt;-->
+    <!--&lt;!&ndash;<meta name="viewport" content="width=device-width, initial-scale=1">&ndash;&gt;-->
+    <!--&lt;!&ndash;{% seo %}&ndash;&gt;-->
+    <!--&lt;!&ndash;&lt;!&ndash;<link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;{% feed_meta %}&ndash;&gt;-->
+    <!--&lt;!&ndash;{% if jekyll.environment == 'production' and site.google_analytics %}&ndash;&gt;-->
+    <!--&lt;!&ndash;{% include google-analytics.html %}&ndash;&gt;-->
+    <!--&lt;!&ndash;{% endif %}&ndash;&gt;-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <!--&lt;!&ndash;<style>&ndash;&gt;-->
+        <!--&lt;!&ndash;body {&ndash;&gt;-->
+            <!--&lt;!&ndash;font-family: 'Ubuntu', sans-serif;&ndash;&gt;-->
+            <!--&lt;!&ndash;color: #333;&ndash;&gt;-->
+            <!--&lt;!&ndash;overflow-x: hidden;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;* {&ndash;&gt;-->
+            <!--&lt;!&ndash;box-sizing: border-box;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.fix-underline-a {&ndash;&gt;-->
+            <!--&lt;!&ndash;height: 50px;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.v-header {&ndash;&gt;-->
+            <!--&lt;!&ndash;height: 90vh;&ndash;&gt;-->
+            <!--&lt;!&ndash;display: flex;&ndash;&gt;-->
+            <!--&lt;!&ndash;align-items: center;&ndash;&gt;-->
+            <!--&lt;!&ndash;color: #fff;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.container {&ndash;&gt;-->
+            <!--&lt;!&ndash;max-width: 960px;&ndash;&gt;-->
+            <!--&lt;!&ndash;padding-left: 1rem;&ndash;&gt;-->
+            <!--&lt;!&ndash;padding-right: 1rem;&ndash;&gt;-->
+            <!--&lt;!&ndash;margin: auto;&ndash;&gt;-->
+            <!--&lt;!&ndash;text-align: center;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.fullscreen-video-wrap {&ndash;&gt;-->
+            <!--&lt;!&ndash;position: absolute;&ndash;&gt;-->
+            <!--&lt;!&ndash;top: 0;&ndash;&gt;-->
+            <!--&lt;!&ndash;left: 0;&ndash;&gt;-->
+            <!--&lt;!&ndash;width: 100%;&ndash;&gt;-->
+            <!--&lt;!&ndash;height: 100vh;&ndash;&gt;-->
+            <!--&lt;!&ndash;overflow: hidden;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.fullscreen-video-wrap video {&ndash;&gt;-->
+            <!--&lt;!&ndash;max-height: 105%;&ndash;&gt;-->
+            <!--&lt;!&ndash;min-width: 100%;&ndash;&gt;-->
+            <!--&lt;!&ndash;height: auto;&ndash;&gt;-->
+            <!--&lt;!&ndash;width: auto;&ndash;&gt;-->
+            <!--&lt;!&ndash;min-height: 100%;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.header-overlay {&ndash;&gt;-->
+            <!--&lt;!&ndash;height: 100vh;&ndash;&gt;-->
+            <!--&lt;!&ndash;position: absolute;&ndash;&gt;-->
+            <!--&lt;!&ndash;top: 0;&ndash;&gt;-->
+            <!--&lt;!&ndash;left: 0;&ndash;&gt;-->
+            <!--&lt;!&ndash;width: 100vw;&ndash;&gt;-->
+            <!--&lt;!&ndash;z-index: 1;&ndash;&gt;-->
+            <!--&lt;!&ndash;background: #225470;&ndash;&gt;-->
+            <!--&lt;!&ndash;opacity: 0.85;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.header-content {&ndash;&gt;-->
+            <!--&lt;!&ndash;z-index: 2;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.header-content h1 {&ndash;&gt;-->
+            <!--&lt;!&ndash;font-size: 50px;&ndash;&gt;-->
+            <!--&lt;!&ndash;margin-bottom: 0;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.header-content p {&ndash;&gt;-->
+            <!--&lt;!&ndash;font-size: 1.5rem;&ndash;&gt;-->
+            <!--&lt;!&ndash;display: block;&ndash;&gt;-->
+            <!--&lt;!&ndash;padding-bottom: 2rem;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.btn {&ndash;&gt;-->
+            <!--&lt;!&ndash;background: #34b3a0;&ndash;&gt;-->
+            <!--&lt;!&ndash;color: #fff;&ndash;&gt;-->
+            <!--&lt;!&ndash;font-size: 1.2rem;&ndash;&gt;-->
+            <!--&lt;!&ndash;padding: 1rem 2rem;&ndash;&gt;-->
+            <!--&lt;!&ndash;text-decoration: none;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+
+        <!--&lt;!&ndash;@media(max-width:960px) {&ndash;&gt;-->
+            <!--&lt;!&ndash;.container {&ndash;&gt;-->
+                <!--&lt;!&ndash;padding-right: 3rem;&ndash;&gt;-->
+                <!--&lt;!&ndash;padding-left: 3rem;&ndash;&gt;-->
+            <!--&lt;!&ndash;}&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.col-12-12 {&ndash;&gt;-->
+            <!--&lt;!&ndash;width: 300px;&ndash;&gt;-->
+            <!--&lt;!&ndash;height: 200px;&ndash;&gt;-->
+            <!--&lt;!&ndash;margin-left: auto;&ndash;&gt;-->
+            <!--&lt;!&ndash;margin-right: auto;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.col-1-4 {&ndash;&gt;-->
+            <!--&lt;!&ndash;margin-left: auto;&ndash;&gt;-->
+            <!--&lt;!&ndash;margin-right: auto;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.member-image {&ndash;&gt;-->
+            <!--&lt;!&ndash;max-width: 150px;&ndash;&gt;-->
+            <!--&lt;!&ndash;max-height: 150px;&ndash;&gt;-->
+            <!--&lt;!&ndash;display: block;&ndash;&gt;-->
+            <!--&lt;!&ndash;margin-left: auto;&ndash;&gt;-->
+            <!--&lt;!&ndash;margin-right: auto;&ndash;&gt;-->
+            <!--&lt;!&ndash;float: none !important;&ndash;&gt;-->
+            <!--&lt;!&ndash;border-radius: 50%;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.navbar {&ndash;&gt;-->
+            <!--&lt;!&ndash;margin-bottom: 20px;&ndash;&gt;-->
+            <!--&lt;!&ndash;border: 0;&ndash;&gt;-->
+            <!--&lt;!&ndash; -webkit-box-shadow: none;&ndash;&gt;-->
+            <!--&lt;!&ndash;box-shadow: none;&ndash;&gt;-->
+            <!--&lt;!&ndash;border-radius: 0;&ndash;&gt;-->
+            <!--&lt;!&ndash;background-color: #292c2f;&ndash;&gt;-->
+            <!--&lt;!&ndash;color: #FFF;&ndash;&gt;-->
+            <!--&lt;!&ndash;padding: 1% 0;&ndash;&gt;-->
+            <!--&lt;!&ndash;font-size: 1.2em;&ndash;&gt;-->
+            <!--&lt;!&ndash;z-index: 2;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.navbar-brand {&ndash;&gt;-->
+            <!--&lt;!&ndash;float: left;&ndash;&gt;-->
+            <!--&lt;!&ndash;min-height: 80px;&ndash;&gt;-->
+            <!--&lt;!&ndash;padding: 0 15px 5px;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.navbar-inverse .navbar-nav .active a,&ndash;&gt;-->
+        <!--&lt;!&ndash;.navbar-inverse .navbar-nav .active a:focus,&ndash;&gt;-->
+        <!--&lt;!&ndash;.navbar-inverse .navbar-nav .active a:hover {&ndash;&gt;-->
+            <!--&lt;!&ndash;position: relative;&ndash;&gt;-->
+            <!--&lt;!&ndash;width: 100%;&ndash;&gt;-->
+            <!--&lt;!&ndash;left: 0;&ndash;&gt;-->
+            <!--&lt;!&ndash;color: #FFF;&ndash;&gt;-->
+            <!--&lt;!&ndash;background-color: transparent;&ndash;&gt;-->
+            <!--&lt;!&ndash;border: 0;&ndash;&gt;-->
+            <!--&lt;!&ndash;border-color: transparent;&ndash;&gt;-->
+            <!--&lt;!&ndash;bottom: -1px;&ndash;&gt;-->
+            <!--&lt;!&ndash;/*Change this to increase/decrease distance*/&ndash;&gt;-->
+            <!--&lt;!&ndash;border-bottom: 3px solid #FFFFFF;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.navbar-inverse .navbar-nav li a {&ndash;&gt;-->
+            <!--&lt;!&ndash;color: #D5D5D5;&ndash;&gt;-->
+            <!--&lt;!&ndash;border: 0;&ndash;&gt;-->
+            <!--&lt;!&ndash;border-color: transparent;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.underlined {&ndash;&gt;-->
+            <!--&lt;!&ndash;position: relative;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.underlined:hover::after {&ndash;&gt;-->
+            <!--&lt;!&ndash;content: '';&ndash;&gt;-->
+            <!--&lt;!&ndash;position: absolute;&ndash;&gt;-->
+            <!--&lt;!&ndash;width: 100%;&ndash;&gt;-->
+            <!--&lt;!&ndash;height: 0;&ndash;&gt;-->
+            <!--&lt;!&ndash;left: 0;&ndash;&gt;-->
+            <!--&lt;!&ndash;bottom: -1px;&ndash;&gt;-->
+            <!--&lt;!&ndash;/*Change this to increase/decrease distance*/&ndash;&gt;-->
+            <!--&lt;!&ndash;border-bottom: 3px solid #FFFFFF;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.carousel-caption {&ndash;&gt;-->
+            <!--&lt;!&ndash;top: 50%;&ndash;&gt;-->
+            <!--&lt;!&ndash;transform: translateY(-50%);&ndash;&gt;-->
+            <!--&lt;!&ndash;text-transform: uppercase;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.btn {&ndash;&gt;-->
+            <!--&lt;!&ndash;font-size: 18px;&ndash;&gt;-->
+            <!--&lt;!&ndash;color: #FFF;&ndash;&gt;-->
+            <!--&lt;!&ndash;padding: 12px 22px;&ndash;&gt;-->
+            <!--&lt;!&ndash;background-color: #3F8FB0;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.icon {&ndash;&gt;-->
+            <!--&lt;!&ndash;max-width: 200px;&ndash;&gt;-->
+            <!--&lt;!&ndash;margin: 1% auto;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;@media (max-width: 600px) {&ndash;&gt;-->
+            <!--&lt;!&ndash;.carousel-caption {&ndash;&gt;-->
+                <!--&lt;!&ndash;display: none;&ndash;&gt;-->
+            <!--&lt;!&ndash;}&ndash;&gt;-->
+
+            <!--&lt;!&ndash;#icon {&ndash;&gt;-->
+                <!--&lt;!&ndash;max-width: 150px;&ndash;&gt;-->
+            <!--&lt;!&ndash;}&ndash;&gt;-->
+
+            <!--&lt;!&ndash;h2 {&ndash;&gt;-->
+                <!--&lt;!&ndash;font-size: 1.7em;&ndash;&gt;-->
+            <!--&lt;!&ndash;}&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;/* entire container, keeps perspective */&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.flip-container {&ndash;&gt;-->
+            <!--&lt;!&ndash;perspective: 1000px;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+
+
+        <!--&lt;!&ndash;/* flip the pane when hovered */&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.flip-container:hover .flipper,&ndash;&gt;-->
+        <!--&lt;!&ndash;.flip-container.hover .flipper {&ndash;&gt;-->
+            <!--&lt;!&ndash;transform: rotateY(180deg);&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.flip-container,&ndash;&gt;-->
+        <!--&lt;!&ndash;.front,&ndash;&gt;-->
+        <!--&lt;!&ndash;.back {&ndash;&gt;-->
+            <!--&lt;!&ndash;width: auto;&ndash;&gt;-->
+            <!--&lt;!&ndash;height: 200px;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+
+
+
+        <!--&lt;!&ndash;/* flip speed goes here */&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.flipper {&ndash;&gt;-->
+            <!--&lt;!&ndash;transition: 0.7s;&ndash;&gt;-->
+            <!--&lt;!&ndash;transform-style: preserve-3d;&ndash;&gt;-->
+
+            <!--&lt;!&ndash;position: relative;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+
+
+
+        <!--&lt;!&ndash;/* hide back of pane during swap */&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.front,&ndash;&gt;-->
+        <!--&lt;!&ndash;.back {&ndash;&gt;-->
+            <!--&lt;!&ndash;backface-visibility: hidden;&ndash;&gt;-->
+
+            <!--&lt;!&ndash;position: absolute;&ndash;&gt;-->
+            <!--&lt;!&ndash;top: 0;&ndash;&gt;-->
+            <!--&lt;!&ndash;left: 0;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+
+
+        <!--&lt;!&ndash;/* front pane, placed above back */&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.front {&ndash;&gt;-->
+            <!--&lt;!&ndash;z-index: 2;&ndash;&gt;-->
+            <!--&lt;!&ndash;/* for firefox 31 */&ndash;&gt;-->
+            <!--&lt;!&ndash;transform: rotateY(0deg);&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+
+
+        <!--&lt;!&ndash;/* back, initially hidden pane */&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.back {&ndash;&gt;-->
+            <!--&lt;!&ndash;transform: rotateY(180deg);&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.padding {&ndash;&gt;-->
+            <!--&lt;!&ndash;padding-top: 60px;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.footer-distributed {&ndash;&gt;-->
+            <!--&lt;!&ndash;background-color: #292c2f;&ndash;&gt;-->
+            <!--&lt;!&ndash;box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);&ndash;&gt;-->
+            <!--&lt;!&ndash;box-sizing: border-box;&ndash;&gt;-->
+            <!--&lt;!&ndash;width: 100%;&ndash;&gt;-->
+            <!--&lt;!&ndash;text-align: left;&ndash;&gt;-->
+            <!--&lt;!&ndash;font: normal 16px sans-serif;&ndash;&gt;-->
+
+            <!--&lt;!&ndash;padding: 45px 50px;&ndash;&gt;-->
+            <!--&lt;!&ndash;margin-top: 80px;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.footer-distributed .footer-left p {&ndash;&gt;-->
+            <!--&lt;!&ndash;color: #ffffff;&ndash;&gt;-->
+            <!--&lt;!&ndash;font-size: 14px;&ndash;&gt;-->
+            <!--&lt;!&ndash;margin: 0;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+        <!--&lt;!&ndash;.footer-distributed .footer-left img {&ndash;&gt;-->
+            <!--&lt;!&ndash;height: 35px;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.footer-distributed .footer-right ul {&ndash;&gt;-->
+            <!--&lt;!&ndash;/*margin:0;*/&ndash;&gt;-->
+            <!--&lt;!&ndash;padding:0;&ndash;&gt;-->
+            <!--&lt;!&ndash;/*display:none;*/&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;/*#nav:hover > .footer-distributed .footer-right ul {*/&ndash;&gt;-->
+        <!--&lt;!&ndash;/*display:block;*/&ndash;&gt;-->
+        <!--&lt;!&ndash;/*}*/&ndash;&gt;-->
+
+
+        <!--&lt;!&ndash;/* Footer links */&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.footer-distributed p.footer-links {&ndash;&gt;-->
+            <!--&lt;!&ndash;font-size: 18px;&ndash;&gt;-->
+            <!--&lt;!&ndash;font-weight: bold;&ndash;&gt;-->
+            <!--&lt;!&ndash;color: #ffffff;&ndash;&gt;-->
+            <!--&lt;!&ndash;margin: 0 0 10px;&ndash;&gt;-->
+            <!--&lt;!&ndash;padding: 0;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.footer-distributed p.footer-links a {&ndash;&gt;-->
+            <!--&lt;!&ndash;display: inline-block;&ndash;&gt;-->
+            <!--&lt;!&ndash;line-height: 1.8;&ndash;&gt;-->
+            <!--&lt;!&ndash;text-decoration: none;&ndash;&gt;-->
+            <!--&lt;!&ndash;color: inherit;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.footer-distributed .footer-right {&ndash;&gt;-->
+            <!--&lt;!&ndash;float: right;&ndash;&gt;-->
+            <!--&lt;!&ndash;margin-top: 6px;&ndash;&gt;-->
+            <!--&lt;!&ndash;/*max-width: 180px;*/&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.flag {&ndash;&gt;-->
+            <!--&lt;!&ndash;margin-right: 3.3px;&ndash;&gt;-->
+            <!--&lt;!&ndash;display: inline-block;&ndash;&gt;-->
+            <!--&lt;!&ndash;width: 30px;&ndash;&gt;-->
+            <!--&lt;!&ndash;height: 35px;&ndash;&gt;-->
+            <!--&lt;!&ndash;background-color: #33383b;&ndash;&gt;-->
+            <!--&lt;!&ndash;border-radius: 2px;&ndash;&gt;-->
+
+            <!--&lt;!&ndash;font-size: 20px;&ndash;&gt;-->
+            <!--&lt;!&ndash;color: #ffffff;&ndash;&gt;-->
+            <!--&lt;!&ndash;text-align: center;&ndash;&gt;-->
+            <!--&lt;!&ndash;line-height: 35px;&ndash;&gt;-->
+
+            <!--&lt;!&ndash;margin-left: 3px;&ndash;&gt;-->
+            <!--&lt;!&ndash;list-style-type: none;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.footer-distributed .footer-right a {&ndash;&gt;-->
+            <!--&lt;!&ndash;display: inline-block;&ndash;&gt;-->
+            <!--&lt;!&ndash;width: 30px;&ndash;&gt;-->
+            <!--&lt;!&ndash;height: 35px;&ndash;&gt;-->
+            <!--&lt;!&ndash;background-color: #33383b;&ndash;&gt;-->
+            <!--&lt;!&ndash;border-radius: 2px;&ndash;&gt;-->
+
+            <!--&lt;!&ndash;font-size: 20px;&ndash;&gt;-->
+            <!--&lt;!&ndash;color: #ffffff;&ndash;&gt;-->
+            <!--&lt;!&ndash;text-align: center;&ndash;&gt;-->
+            <!--&lt;!&ndash;line-height: 35px;&ndash;&gt;-->
+
+            <!--&lt;!&ndash;margin-left: 3px;&ndash;&gt;-->
+            <!--&lt;!&ndash;list-style-type: none;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;#id1{&ndash;&gt;-->
+            <!--&lt;!&ndash;/*background:red;*/&ndash;&gt;-->
+            <!--&lt;!&ndash;position:relative;&ndash;&gt;-->
+            <!--&lt;!&ndash;list-style-type: none;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.flag > li{&ndash;&gt;-->
+            <!--&lt;!&ndash;list-style-type: none;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.drop_down{&ndash;&gt;-->
+            <!--&lt;!&ndash;display:none;&ndash;&gt;-->
+            <!--&lt;!&ndash;position:absolute;&ndash;&gt;-->
+            <!--&lt;!&ndash;bottom:35px;&ndash;&gt;-->
+            <!--&lt;!&ndash;left:-70px;&ndash;&gt;-->
+            <!--&lt;!&ndash;list-style-type: none;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.flag li:hover ul{&ndash;&gt;-->
+            <!--&lt;!&ndash;display:block;&ndash;&gt;-->
+            <!--&lt;!&ndash;list-style-type: none;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+
+        <!--&lt;!&ndash;#en a, #fr a {&ndash;&gt;-->
+            <!--&lt;!&ndash;width:100px;&ndash;&gt;-->
+            <!--&lt;!&ndash;border-radius: inherit;&ndash;&gt;-->
+            <!--&lt;!&ndash;list-style-type: none;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;@media (max-width: 600px) {&ndash;&gt;-->
+
+            <!--&lt;!&ndash;.footer-distributed .footer-left,&ndash;&gt;-->
+            <!--&lt;!&ndash;.footer-distributed .footer-right {&ndash;&gt;-->
+                <!--&lt;!&ndash;text-align: center;&ndash;&gt;-->
+            <!--&lt;!&ndash;}&ndash;&gt;-->
+
+            <!--&lt;!&ndash;.footer-distributed .footer-right {&ndash;&gt;-->
+                <!--&lt;!&ndash;float: none;&ndash;&gt;-->
+                <!--&lt;!&ndash;margin: 0 auto 20px;&ndash;&gt;-->
+            <!--&lt;!&ndash;}&ndash;&gt;-->
+
+            <!--&lt;!&ndash;.footer-distributed .footer-left p.footer-links {&ndash;&gt;-->
+                <!--&lt;!&ndash;line-height: 1.8;&ndash;&gt;-->
+            <!--&lt;!&ndash;}&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;footer{&ndash;&gt;-->
+            <!--&lt;!&ndash;position: absolute;&ndash;&gt;-->
+
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;@media (max-height:800px){&ndash;&gt;-->
+            <!--&lt;!&ndash;footer { position: static; }&ndash;&gt;-->
+            <!--&lt;!&ndash;/*header { padding-top:10px; }*/&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.post-list {&ndash;&gt;-->
+            <!--&lt;!&ndash;list-style-type: none;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.post {&ndash;&gt;-->
+            <!--&lt;!&ndash;padding-bottom: 20px;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+        <!--&lt;!&ndash;.h-entry{&ndash;&gt;-->
+            <!--&lt;!&ndash;padding-left: 40px;&ndash;&gt;-->
+            <!--&lt;!&ndash;padding-right: 40px;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;</style>&ndash;&gt;-->
+<!--</head>-->
