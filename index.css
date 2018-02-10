@@ -57,11 +57,15 @@ body {
 
 .header-content {
     z-index: 2;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .header-content h1 {
     font-size: 50px;
-    margin-bottom: 0;
 }
 
 .header-content p {
@@ -142,6 +146,21 @@ body {
     border-bottom: 3px solid #FFFFFF;
 }
 
+.navbar-inverse .navbar-nav .active-a a,
+.navbar-inverse .navbar-nav .active-a a:focus,
+.navbar-inverse .navbar-nav .active-a a:hover {
+    position: relative;
+    width: 100%;
+    left: 0;
+    color: #FFF;
+    background-color: transparent;
+    border: 0;
+    border-color: transparent;
+    bottom: -1px;
+    /*Change this to increase/decrease distance*/
+    border-bottom: 3px solid black;
+}
+
 .navbar-inverse .navbar-nav li a {
     color: #D5D5D5;
     border: 0;
@@ -161,6 +180,21 @@ body {
     bottom: -1px;
     /*Change this to increase/decrease distance*/
     border-bottom: 3px solid #FFFFFF;
+}
+
+.underlined-a {
+    position: relative;
+}
+
+.underlined-a:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    left: 0;
+    bottom: -1px;
+    /*Change this to increase/decrease distance*/
+    border-bottom: 3px solid black;
 }
 
 .carousel-caption {
@@ -275,6 +309,8 @@ body {
 
     padding: 45px 50px;
     margin-top: 80px;
+    position:relative;
+
 }
 
 .footer-distributed .footer-left p {
@@ -319,6 +355,7 @@ body {
     margin-top: 6px;
     /*max-width: 180px;*/
 }
+
 
 .flag {
     margin-right: 3.3px;
